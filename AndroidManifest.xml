@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="angelhack.jobber"
+    android:versionCode="1"
+    android:versionName="3.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/jb_i"
+        android:label="@string/app_name" >
+        
+        
+        <!--  Login Activity --><activity android:name="JBSplash"><intent-filter >
+                <action android:name="android.intent.action.MAIN" /><category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter></activity><activity android:name="JBMainUser"></activity><activity
+            android:label="@string/app_name"
+            android:name="JBMain" >
+        </activity>
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account" 
+            android:name="JBReg"></activity>
+        <activity
+            android:label="Tab1" 
+            android:name="angelhack.jobber.AndroidTabLayoutActivity"></activity>
+        <activity
+            android:label="Home" 
+            android:name="angelhack.jobber.Home"></activity>
+        <activity
+            android:label="Profile" 
+            android:name="angelhack.jobber.Profile"></activity>
+        <activity
+            android:label="Search" 
+            android:name="angelhack.jobber.Search"></activity>
+        
+        
+        
+    </application>
+    
+    <!-- Allow to connect with internet -->
+	<uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

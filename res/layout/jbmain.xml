@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dip"
+    tools:context=".JBMain" >
+
+    <!-- View Title Label -->
+
+    <!-- Email Label -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:src="@drawable/jb_icon" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:src="@drawable/jb_i" />
+
+    <Button
+        android:id="@+id/btnLinkToRegisterScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="40dip"
+        android:background="@null"
+        android:text="Sign UP!"
+        android:textColor="#21dbd4"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+    <!-- Email TextField -->
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Password Label -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:text="Password" />
+    <!-- Password TextField -->
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:password="true" />
+
+    <!-- Error message -->
+
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:textColor="#e30000"
+        android:textStyle="bold" />
+
+    <!-- Login Button -->
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dip"
+        android:text="Got IT" />
+
+    <!-- Link to Registration Screen -->
+
+</LinearLayout>
